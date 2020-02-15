@@ -20,47 +20,47 @@ namespace GenerateRandomStrings
         #region 生成按钮单击事件
         private void btn_generate_Click(object sender, EventArgs e)
         {
-            //richTextBox1.Text = getready(txtbox_length.Text);
+            richTextBox1.Text = GenerateRandomValue.StringToArray(txtbox_length.Text);
 
             #region 给radioButton赋值
             int radiobtn_value = 0;
-            if (radiobtn_Number.Checked == true)
+            if (radiobtn_Number.Checked == true)//数字
             {
                 radiobtn_value = 1;
             }
-            else if (radiobtn_LowerCaseLetters.Checked == true)
+            else if (radiobtn_LowerCaseLetters.Checked == true)//小写字母
             {
                 radiobtn_value = 2;
             }
-            else if (radiobtn_UpperCaseLetters.Checked == true)
+            else if (radiobtn_UpperCaseLetters.Checked == true)//大写字母
             {
                 radiobtn_value = 3;
             }
-            else if (radiobtn_UppercaseAndLowerCaseLetters.Checked == true)
+            else if (radiobtn_UppercaseAndLowerCaseLetters.Checked == true)//大小写字母
             {
                 radiobtn_value = 4;
             }
-            else if (radiobtn_NumberAndLowerCaseLetters.Checked == true)
+            else if (radiobtn_NumberAndLowerCaseLetters.Checked == true)//数字+小写字母
             {
                 radiobtn_value = 5;
             }
-            else if (radiobtn_NumberAndUpperCaseLetters.Checked == true)
+            else if (radiobtn_NumberAndUpperCaseLetters.Checked == true)//数字+大写字母
             {
                 radiobtn_value = 6;
             }
-            else if (radiobtn_NumberAndUppercaseAndLowerCaseLetters.Checked == true)
+            else if (radiobtn_NumberAndUppercaseAndLowerCaseLetters.Checked == true)//数字+大小写字母
             {
                 radiobtn_value = 7;
             }
-            else if (radiobtn_Symbol.Checked == true)
+            else if (radiobtn_Symbol.Checked == true)//符号
             {
                 radiobtn_value = 8;
             }
-            else if (radiobtn_ChineseCharacter.Checked == true)
+            else if (radiobtn_ChineseCharacter.Checked == true)//汉字
             {
                 radiobtn_value = 9;
             }
-            else if (radiobtn_Mixed.Checked == true)
+            else if (radiobtn_Mixed.Checked == true)//混合
             {
                 radiobtn_value = 10;
             }
@@ -94,10 +94,10 @@ namespace GenerateRandomStrings
                     richTextBox1.Text = GenerateRandomValue.RandomSymbol(GetLength(txtbox_length));
                     break;
                 case 9://汉字
-                    richTextBox1.Text = GenerateRandomValue.RandomNumber(GetLength(txtbox_length));
+                    richTextBox1.Text = GenerateRandomValue.RandomChineseCharacter(GetLength(txtbox_length));
                     break;
                 case 10://混合
-                    richTextBox1.Text = GenerateRandomValue.RandomNumber(GetLength(txtbox_length));
+                    richTextBox1.Text = GenerateRandomValue.RandomMixed(GetLength(txtbox_length));
                     break;
                 default:
                     break;
@@ -124,18 +124,6 @@ namespace GenerateRandomStrings
             else
             {
                 MessageBox.Show("请输入数字！");
-            }
-            return result;
-        }
-        #endregion
-
-        #region 字符串转数组
-        private static string getready(string str)
-        {
-            string result = string.Empty;
-            for (int i = 0; i < str.Length; i++)
-            {
-                result += "'" + str.Substring(i, 1) + "',";
             }
             return result;
         }

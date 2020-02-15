@@ -57,7 +57,7 @@
             // radiobtn_LowerCaseLetters
             // 
             this.radiobtn_LowerCaseLetters.AutoSize = true;
-            this.radiobtn_LowerCaseLetters.Location = new System.Drawing.Point(113, 12);
+            this.radiobtn_LowerCaseLetters.Location = new System.Drawing.Point(119, 12);
             this.radiobtn_LowerCaseLetters.Name = "radiobtn_LowerCaseLetters";
             this.radiobtn_LowerCaseLetters.Size = new System.Drawing.Size(71, 16);
             this.radiobtn_LowerCaseLetters.TabIndex = 1;
@@ -68,7 +68,7 @@
             // radiobtn_UpperCaseLetters
             // 
             this.radiobtn_UpperCaseLetters.AutoSize = true;
-            this.radiobtn_UpperCaseLetters.Location = new System.Drawing.Point(214, 12);
+            this.radiobtn_UpperCaseLetters.Location = new System.Drawing.Point(238, 12);
             this.radiobtn_UpperCaseLetters.Name = "radiobtn_UpperCaseLetters";
             this.radiobtn_UpperCaseLetters.Size = new System.Drawing.Size(71, 16);
             this.radiobtn_UpperCaseLetters.TabIndex = 2;
@@ -90,7 +90,7 @@
             // radiobtn_NumberAndLowerCaseLetters
             // 
             this.radiobtn_NumberAndLowerCaseLetters.AutoSize = true;
-            this.radiobtn_NumberAndLowerCaseLetters.Location = new System.Drawing.Point(416, 12);
+            this.radiobtn_NumberAndLowerCaseLetters.Location = new System.Drawing.Point(404, 12);
             this.radiobtn_NumberAndLowerCaseLetters.Name = "radiobtn_NumberAndLowerCaseLetters";
             this.radiobtn_NumberAndLowerCaseLetters.Size = new System.Drawing.Size(101, 16);
             this.radiobtn_NumberAndLowerCaseLetters.TabIndex = 4;
@@ -112,7 +112,7 @@
             // radiobtn_NumberAndUppercaseAndLowerCaseLetters
             // 
             this.radiobtn_NumberAndUppercaseAndLowerCaseLetters.AutoSize = true;
-            this.radiobtn_NumberAndUppercaseAndLowerCaseLetters.Location = new System.Drawing.Point(113, 34);
+            this.radiobtn_NumberAndUppercaseAndLowerCaseLetters.Location = new System.Drawing.Point(119, 34);
             this.radiobtn_NumberAndUppercaseAndLowerCaseLetters.Name = "radiobtn_NumberAndUppercaseAndLowerCaseLetters";
             this.radiobtn_NumberAndUppercaseAndLowerCaseLetters.Size = new System.Drawing.Size(113, 16);
             this.radiobtn_NumberAndUppercaseAndLowerCaseLetters.TabIndex = 6;
@@ -123,7 +123,7 @@
             // radiobtn_Symbol
             // 
             this.radiobtn_Symbol.AutoSize = true;
-            this.radiobtn_Symbol.Location = new System.Drawing.Point(214, 34);
+            this.radiobtn_Symbol.Location = new System.Drawing.Point(238, 34);
             this.radiobtn_Symbol.Name = "radiobtn_Symbol";
             this.radiobtn_Symbol.Size = new System.Drawing.Size(47, 16);
             this.radiobtn_Symbol.TabIndex = 7;
@@ -145,7 +145,7 @@
             // radiobtn_Mixed
             // 
             this.radiobtn_Mixed.AutoSize = true;
-            this.radiobtn_Mixed.Location = new System.Drawing.Point(416, 34);
+            this.radiobtn_Mixed.Location = new System.Drawing.Point(404, 34);
             this.radiobtn_Mixed.Name = "radiobtn_Mixed";
             this.radiobtn_Mixed.Size = new System.Drawing.Size(71, 16);
             this.radiobtn_Mixed.TabIndex = 9;
@@ -155,9 +155,9 @@
             // 
             // btn_generate
             // 
-            this.btn_generate.Location = new System.Drawing.Point(523, 31);
+            this.btn_generate.Location = new System.Drawing.Point(511, 31);
             this.btn_generate.Name = "btn_generate";
-            this.btn_generate.Size = new System.Drawing.Size(75, 23);
+            this.btn_generate.Size = new System.Drawing.Size(93, 23);
             this.btn_generate.TabIndex = 10;
             this.btn_generate.Text = "生成";
             this.btn_generate.UseVisualStyleBackColor = true;
@@ -169,14 +169,14 @@
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(592, 375);
             this.richTextBox1.TabIndex = 12;
-            this.richTextBox1.Text = "数字√\n小写字母√\n大写字母√\n大小写字母√\n数字+小写字母√\n数字+大写字母√\n数字+大小写字母√\n符号√\n汉字\n混合以上";
+            this.richTextBox1.Text = "数字√\n小写字母√\n大写字母√\n大小写字母√\n数字+小写字母√\n数字+大写字母√\n数字+大小写字母√\n符号√\n汉字√\n混合以上√";
             this.richTextBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.richTextBox1_MouseClick);
             // 
             // txtbox_length
             // 
-            this.txtbox_length.Location = new System.Drawing.Point(523, 7);
+            this.txtbox_length.Location = new System.Drawing.Point(511, 7);
             this.txtbox_length.Name = "txtbox_length";
-            this.txtbox_length.Size = new System.Drawing.Size(75, 21);
+            this.txtbox_length.Size = new System.Drawing.Size(93, 21);
             this.txtbox_length.TabIndex = 13;
             this.txtbox_length.Text = "长度";
             this.txtbox_length.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtbox_length_MouseClick);
@@ -199,6 +199,8 @@
             this.Controls.Add(this.radiobtn_UpperCaseLetters);
             this.Controls.Add(this.radiobtn_LowerCaseLetters);
             this.Controls.Add(this.radiobtn_Number);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
