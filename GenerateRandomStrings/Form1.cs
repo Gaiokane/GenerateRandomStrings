@@ -64,6 +64,10 @@ namespace GenerateRandomStrings
             {
                 radiobtn_value = 10;
             }
+            else if (radiobtn_GUID.Checked == true)//GUID
+            {
+                radiobtn_value = 11;
+            }
             #endregion
 
             #region switch case处理
@@ -98,6 +102,9 @@ namespace GenerateRandomStrings
                     break;
                 case 10://混合
                     richTextBox1.Text = GenerateRandomValue.RandomMixed(GetLength(txtbox_length));
+                    break;
+                case 11://GUID
+                    richTextBox1.Text = GenerateRandomValue.GUID();
                     break;
                 default:
                     break;

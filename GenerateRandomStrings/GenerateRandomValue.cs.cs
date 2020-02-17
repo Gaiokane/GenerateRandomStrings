@@ -306,6 +306,25 @@ namespace GenerateRandomStrings
         }
         #endregion
 
+        #region 生成随机GUID
+        /// <summary>
+        /// 生成随机GUID
+        /// </summary>
+        /// <param name="Length">生成长度</param>
+        public static string GUID()
+        {
+            /*
+             * 1  var uuid  = Guid.NewGuid().ToString();    // 9af7f46a-ea52-4aa3-b8c3-9fd484c2af12
+             * 2  var uuidN = Guid.NewGuid().ToString("N"); // e0a953c3ee6040eaa9fae2b667060e09
+             * 3  var uuidD = Guid.NewGuid().ToString("D"); // 9af7f46a-ea52-4aa3-b8c3-9fd484c2af12
+             * 4  var uuidB = Guid.NewGuid().ToString("B"); // {734fd453-a4f8-4c5d-9c98-3fe2d7079760}
+             * 5  var uuidP = Guid.NewGuid().ToString("P"); // (ade24d16-db0f-40af-8794-1e08e2040df3)
+             * 6  var uuidX = Guid.NewGuid().ToString("X"); // {0x3fa412e3,0x8356,0x428f,{0xaa,0x34,0xb7,0x40,0xda,0xaf,0x45,0x6f}}
+             */
+            return Guid.NewGuid().ToString();
+        }
+        #endregion
+
         #region 字符串转成数组样式
         /// <summary>
         /// 将字符串转成数组样式
