@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.radiobtn_Number = new System.Windows.Forms.RadioButton();
             this.radiobtn_LowerCaseLetters = new System.Windows.Forms.RadioButton();
             this.radiobtn_UpperCaseLetters = new System.Windows.Forms.RadioButton();
@@ -213,10 +214,11 @@
             this.Controls.Add(this.radiobtn_LowerCaseLetters);
             this.Controls.Add(this.radiobtn_Number);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "生成随机字符";
             this.ResumeLayout(false);
             this.PerformLayout();
 
